@@ -28,10 +28,7 @@ public String pigLatin(String sWord) {
   if(sWord.substring(0,2).equals("qu")) {
     return ((sWord.substring(2, sWord.length()-1) + "qu") + "ay");
   }
-/*f(sWord.substring(0).equals("a") || sWord.substring(0).equals("e") || sWord.substring(0).equals("i") || sWord.substring(0).equals("o") || sWord.substring(0).equals("u")) {
-    return (sWord + "way");
-  }
-  */
+
   if(findFirstVowel(sWord) == 0) {
     return sWord + "way";
   }
